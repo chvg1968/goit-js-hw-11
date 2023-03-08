@@ -100,7 +100,7 @@ function init() {
 
   // Cargar las imágenes al inicio
   searchQuery = '';
-  pageNum = 1;
+  pageNum = -1;
   document.querySelector('.gallery').innerHTML = '';
   searchPhotos(searchQuery, pageNum).then(data => {
     Notify.success(`Hooray! We found ${data.totalHits} images`);
